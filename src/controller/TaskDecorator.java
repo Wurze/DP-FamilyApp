@@ -4,6 +4,7 @@ public class TaskDecorator implements Task {
 
     private Task task;
     private double cost;
+    private String text;
 
     public TaskDecorator(Task task) {
         this.task = task;
@@ -17,5 +18,15 @@ public class TaskDecorator implements Task {
     @Override
     public void setCost(double cost) {
         this.cost = cost;
+    }
+
+    @Override
+    public String getTaskText() {
+        return null;
+    }
+
+    @Override
+    public void setTaskText(String text) {
+
     }
 }

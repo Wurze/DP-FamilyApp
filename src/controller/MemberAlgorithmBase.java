@@ -11,5 +11,6 @@ public abstract class MemberAlgorithmBase {
 
     public abstract void addList(List list);
 
+
     public abstract double calculateDueToPay();
 }
