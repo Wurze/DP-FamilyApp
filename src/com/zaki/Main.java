@@ -40,8 +40,6 @@ public class Main {
         teen.addList(publicList);
 
         System.out.println("The amount due for the senior member is " + senior.calculateDueToPay(publicList));
-        System.out.println("The amount due for the senior member is " + publicList.getTaskCost());
-        System.out.println("The amount due for the senior member is " + publicList.getTaskCost());
-        System.out.println("The amount due for the senior member is " + publicList.getTaskCost());
+
     }
 }
