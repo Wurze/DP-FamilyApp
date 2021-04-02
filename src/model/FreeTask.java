@@ -11,7 +11,6 @@ public class FreeTask extends TaskDecorator {
 
     @Override
     public double getCost() {
-        System.out.println("This is a free task, it does not pay!");
         return super.getCost();
     }
 

@@ -12,7 +12,6 @@ public class Main {
         GradeSchooler gradeSchooler = new GradeSchooler();
 
         Task basicTask = new BasicTask();
-        System.out.println("The basic task provides " + basicTask.getCost());
 
 
         Task freeTask = new FreeTask(basicTask);
@@ -21,6 +20,7 @@ public class Main {
         Task payableTask = new PayableTask(basicTask);
         payableTask.setCost(11);
         payableTask.setTaskText("Buy this ikea furniture");
+        payableTask.getTaskText();
 
         Task volunteerTask = new VolunteerTask(basicTask);
         volunteerTask.setCost(5);

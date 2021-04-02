@@ -11,7 +11,6 @@ public class VolunteerTask extends TaskDecorator {
 
     @Override
     public double getCost() {
-        System.out.println("This volunteer task pays you this amount");
         return cost + super.getCost();
     }
 
