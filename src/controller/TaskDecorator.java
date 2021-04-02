@@ -9,7 +9,7 @@ public class TaskDecorator implements Task {
     }
 
     @Override
-    public double cost() {
-        return this.task.cost();
+    public double rewardPoints() {
+        return this.task.rewardPoints();
     }
 }
