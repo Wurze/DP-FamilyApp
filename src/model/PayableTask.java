@@ -3,15 +3,15 @@ package model;
 import controller.Task;
 import controller.TaskDecorator;
 
-public class VolunteerTask extends TaskDecorator {
+public class PayableTask extends TaskDecorator {
     private double cost;
-    public VolunteerTask(Task task) {
+    public PayableTask(Task task) {
         super(task);
     }
 
     @Override
     public double getCost() {
-        System.out.println("This volunteer task pays you this amount");
+        System.out.println("This task pays you the following amount");
         return cost + super.getCost();
     }
 

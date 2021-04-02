@@ -1,5 +1,6 @@
 package controller;
 
 public interface Task {
-    double rewardPoints();
+    double getCost();
+    void setCost(double cost);
 }
