@@ -5,7 +5,8 @@ An application for a family to list their synced needs and tasks whereas:
 * Choose a task type to add to the list
 * Pay what is due based on age
 
-##Patterns used
+## Patterns used
+
 * Decorator for adding different types of tasks
 * Strategy for the payment different in regard to age
 * Template for building different types of lists
