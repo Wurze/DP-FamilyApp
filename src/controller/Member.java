@@ -8,6 +8,6 @@ public class Member {
 
     public void showDueToPay(List list, double multiplier)
     {
-        System.out.println((algorithmBase.calculateDueToPay(list,multiplier)));
+        System.out.println((algorithmBase.calculateDueToPay(list)));
     }
 }

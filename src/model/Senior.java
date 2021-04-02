@@ -9,9 +9,9 @@ public class Senior extends MemberAlgorithmBase {
     }
 
     @Override
-    public double calculateDueToPay(List list, double multiplier) {
+    public double calculateDueToPay(List list) {
         double dueToPay = 0;
-        multiplier = 1;
+        double multiplier = 1;
         for(List lists: this.lists)
         {
             dueToPay = list.getTaskCost() * multiplier;

@@ -17,7 +17,7 @@ public class PublicList extends List {
         double cost = 0;
         for(Task task: this.tasks)
         {
-            cost = task.getCost();
+            cost += task.getCost();
         }
         return cost;
     }
