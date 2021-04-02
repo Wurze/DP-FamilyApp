@@ -9,7 +9,12 @@ public class GradeSchooler extends MemberAlgorithmBase {
     }
 
     @Override
-    public double calculateDueToPay() {
-        return 0;
+    public double calculateDueToPay(List list, double multiplier) {
+        double dueToPay = 0;
+        for(List lists: this.lists)
+        {
+            dueToPay = list.getTaskCost() * multiplier;
+        }
+        return dueToPay;
     }
 }

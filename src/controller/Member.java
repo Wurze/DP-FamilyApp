@@ -6,8 +6,8 @@ public class Member {
     public MemberAlgorithmBase algorithmBase;
 
 
-    public void showDueToPay()
+    public void showDueToPay(List list, double multiplier)
     {
-
+        System.out.println((algorithmBase.calculateDueToPay(list,multiplier)));
     }
 }

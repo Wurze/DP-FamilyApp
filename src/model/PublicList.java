@@ -12,4 +12,14 @@ public class PublicList extends List {
             this.tasks.add(task);
         }
 
+    @Override
+    public double getTaskCost() {
+        double cost = 0;
+        for(Task task: this.tasks)
+        {
+            cost = task.getCost();
+        }
+        return cost;
+    }
+
 }

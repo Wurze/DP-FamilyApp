@@ -10,5 +10,5 @@ public abstract class List {
     }
 
     abstract public void addTask(Task task);
-
+    public abstract double getTaskCost();
 }

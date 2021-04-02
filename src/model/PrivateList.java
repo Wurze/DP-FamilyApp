@@ -8,4 +8,14 @@ public class PrivateList extends List {
     public void addTask(Task task) {
         this.tasks.add(task);
     }
+
+    @Override
+    public double getTaskCost() {
+        double cost = 0;
+        for(Task task: this.tasks)
+        {
+            cost = task.getCost();
+        }
+        return cost;
+    }
 }
