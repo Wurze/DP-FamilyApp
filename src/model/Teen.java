@@ -12,6 +12,7 @@ public class Teen extends MemberAlgorithmBase {
     @Override
     public double calculateDueToPay(List list, double multiplier) {
         double dueToPay = 0;
+        multiplier = 0.5;
         for(List lists: this.lists)
         {
             dueToPay = list.getTaskCost() * multiplier;
