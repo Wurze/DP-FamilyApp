@@ -1,5 +1,5 @@
 # DP-FamilyApp
-An application for a family to list their synced needs and tasks whereas:
+An application for a family to list their synced needs and tasks whereas you can:
 
 * Create lists
 * Choose a task type to add to the list
