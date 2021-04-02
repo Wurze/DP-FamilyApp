@@ -8,7 +8,7 @@ An application for a family to list their synced needs and tasks whereas you can
 ## Patterns used
 
 * Decorator for adding different types of tasks
-* Strategy for the payment different in regard to age
+* Strategy for the payment difference in regard to age
 * Template for building different types of lists
 # UML
 ![UML Diagram](UML.PNG "Family App UML")
