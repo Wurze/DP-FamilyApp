@@ -11,7 +11,7 @@ public class PayableTask extends TaskDecorator {
 
     @Override
     public double getCost() {
-        System.out.println("This task pays you the following amount");
+        System.out.println("You have to pay this amount to finish the task");
         return cost + super.getCost();
     }
 

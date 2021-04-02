@@ -1,6 +1,15 @@
 package model;
+import controller.List;
+import controller.MemberAlgorithmBase;
 
-import controller.Member;
+public class GradeSchooler extends MemberAlgorithmBase {
+    @Override
+    public void addList(List list) {
+        this.lists.add(list);
+    }
 
-public class GradeSchooler extends Member {
+    @Override
+    public double calculateDueToPay() {
+        return 0;
+    }
 }
