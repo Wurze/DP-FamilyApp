@@ -14,19 +14,18 @@ public class Main {
         Task basicTask = new BasicTask();
 
 
-        Task freeTask = new FreeTask(basicTask);
-        freeTask.setTaskText("Take the garbage out");
+        Task freeTask = new FreeTask(basicTask,"Take the garbage out");
+        System.out.println(freeTask.getTaskText());
 
-        Task payableTask = new PayableTask(basicTask);
+        Task payableTask = new PayableTask(basicTask,"Buy this Ikea furniture");
         payableTask.setCost(11);
-        payableTask.setTaskText("Buy this ikea furniture");
-        payableTask.getTaskText();
+        System.out.println(payableTask.getTaskText());
 
-        Task volunteerTask = new VolunteerTask(basicTask);
+        Task volunteerTask = new VolunteerTask(basicTask,"help mother clean the basement");
         volunteerTask.setCost(5);
-        volunteerTask.setTaskText("Volunteer to help mother clean basement");
+        System.out.println(volunteerTask.getTaskText());
 
-        System.out.println(freeTask.getCost());
+
 
         PublicList publicList = new PublicList();
 

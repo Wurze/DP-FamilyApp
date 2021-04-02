@@ -6,8 +6,8 @@ import controller.TaskDecorator;
 public class PayableTask extends TaskDecorator {
     private double cost;
     private String text;
-    public PayableTask(Task task) {
-        super(task);
+    public PayableTask(Task task,String text) {
+        super(task,text);
     }
 
     @Override
@@ -27,6 +27,6 @@ public class PayableTask extends TaskDecorator {
 
     @Override
     public void setTaskText(String text) {
-        super.setTaskText(text);
+        this.text = text;
     }
 }

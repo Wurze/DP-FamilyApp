@@ -6,8 +6,9 @@ public class TaskDecorator implements Task {
     private double cost;
     private String text;
 
-    public TaskDecorator(Task task) {
+    public TaskDecorator(Task task,String text) {
         this.task = task;
+        this.text = text;
     }
 
     @Override
@@ -22,11 +23,11 @@ public class TaskDecorator implements Task {
 
     @Override
     public String getTaskText() {
-        return null;
+        return this.text;
     }
 
     @Override
     public void setTaskText(String text) {
-
+    this.text = text;
     }
 }

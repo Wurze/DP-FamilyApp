@@ -5,8 +5,10 @@ import controller.TaskDecorator;
 
 public class VolunteerTask extends TaskDecorator {
     private double cost;
-    public VolunteerTask(Task task) {
-        super(task);
+    private String text;
+    public VolunteerTask(Task task,String text) {
+        super(task,text);
+        this.text = text;
     }
 
     @Override
@@ -17,5 +19,15 @@ public class VolunteerTask extends TaskDecorator {
     @Override
     public void setCost(double cost){
         this.cost = cost;
+    }
+
+    @Override
+    public String getTaskText() {
+        return super.getTaskText();
+    }
+
+    @Override
+    public void setTaskText(String text) {
+        this.text = text;
     }
 }

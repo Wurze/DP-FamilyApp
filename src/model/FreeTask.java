@@ -5,8 +5,8 @@ import controller.TaskDecorator;
 
 public class FreeTask extends TaskDecorator {
     private String text;
-    public FreeTask(Task task) {
-        super(task);
+    public FreeTask(Task task,String text) {
+        super(task,text);
     }
 
     @Override
@@ -21,6 +21,6 @@ public class FreeTask extends TaskDecorator {
 
     @Override
     public void setTaskText(String text) {
-        super.setTaskText(text);
+        this.text = text;
     }
 }
